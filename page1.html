@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+bc=new BroadcastChannel("data");
+bc.onMessage => (event) {
+     console.log("Received event : ",event);
+     alert('Received event '+event);
+     
+}
+
+function sendMessage(msg) {
+	alert('sendMessage');
+	bc.postMessage(msg);
+}
+</script>
+</head>
+<body>
+<h1>Page A</h1>
+<h2>Creating a broadcast channel...</h2>
+
+
+<button type="button" onclick="sendMessage('test message')">Send Message</button>
+
+
+
+</body>
+</html>
