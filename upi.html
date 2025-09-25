@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function launchIntent() {
+	window.location.href = "intent://pay/#Intent;scheme=upi;data=upi%3A%2F%2Fpay%3Fpa%3D9876543210%2540pz%26am%3D1.00%26cur%3DINR%26pn%3DABC;end"
+}
+</script>
+
+</head>
+<body>
+
+<h1>UPI Test</h1>
+<br><br>
+<p>
+<button onclick="launchIntent()">Launch Intent</button>	
+<br><br>
+<a href="intent://pay/#Intent;scheme=upi;data=upi%3A%2F%2Fpay%3Fpa%3D9876543210%2540pz%26am%3D1.00%26cur%3DINR%26pn%3DABC;end">Click here to launch intent</a>
+
+
+</p>
+
+</body>
+</html>
+
